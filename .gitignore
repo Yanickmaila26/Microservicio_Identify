@@ -1,0 +1,33 @@
+# Visual Studio
+.vs/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.useros
+*.userprefs
+*.sln.docstates
+*.dbmdl
+*.jsproj.user
+_Chutzpah*
+*.lfm
+*.lfm.bak
+*.lrs
+*.lrt
+*.lpr.bak
+*.lpst
+*.lpi.bak
+*.lps.bak
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# User-specific files
+appsettings.Development.json
+
+# Git
+*.yaml
+
+conexiones_bases.env
