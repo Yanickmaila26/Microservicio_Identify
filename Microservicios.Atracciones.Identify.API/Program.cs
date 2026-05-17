@@ -27,8 +27,8 @@ builder.Services.AddBusinessServices();
 builder.Services.AddControllers(options => 
 {
     options.Filters.Add<Microservicios.Atracciones.Identify.API.Filters.ApiResponseWrapperFilter>();
-    // Añadir prefijo global: api/v1/yanick-maila/[controller]
-    options.Conventions.Add(new RoutePrefixConvention("api/v1/yanick-maila"));
+    // Añadir prefijo global: api/v1/yanick-maila/identify/[controller]
+    options.Conventions.Add(new RoutePrefixConvention("api/v1/yanick-maila/identify"));
 })
     .AddJsonOptions(options =>
     {

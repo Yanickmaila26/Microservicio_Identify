@@ -19,6 +19,9 @@ _Chutzpah*
 *.lpi.bak
 *.lps.bak
 
+.gitignore
+.git/
+
 # .NET Core
 project.lock.json
 project.fragment.lock.json
@@ -31,3 +34,4 @@ appsettings.Development.json
 *.yaml
 
 conexiones_bases.env
+*.sql

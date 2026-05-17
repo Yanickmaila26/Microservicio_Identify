@@ -25,6 +25,7 @@ public class AtraccionDbContext : DbContext
     public DbSet<User> Users { get; set; }
     public DbSet<UserRole> UserRoles { get; set; }
     public DbSet<Client> Clients { get; set; }
+    public DbSet<IdentityAuditLog> IdentityAuditLogs { get; set; }
 
 
         // ══════════════════════════════════════════════════
@@ -41,7 +42,8 @@ public class AtraccionDbContext : DbContext
         { nameof(User), "users" },
         { nameof(UserRole), "user_role" },
         { nameof(Role), "role" },
-        { nameof(Client), "client" }
+        { nameof(Client), "client" },
+        { nameof(IdentityAuditLog), "identity_audit_log" }
     };
 
     foreach (var entity in modelBuilder.Model.GetEntityTypes())
